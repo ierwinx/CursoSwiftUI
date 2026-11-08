@@ -50,13 +50,11 @@ struct Login: View {
                             )
                             .shadow(color: Color.black.opacity(0.07), radius: 1, x: 0, y: 1)
                         
-                        NavigationLink(destination: Listas()) {
-                            Text("Escribe tu contraseña:")
-                                .fontWeight(.bold)
-                                .foregroundStyle(.blue)
-                                .background(.white)
-                                .offset(x: 8, y: -24)
-                        }
+                        Text("Escribe tu contraseña:")
+                            .fontWeight(.bold)
+                            .foregroundStyle(.blue)
+                            .background(.white)
+                            .offset(x: 8, y: -24)
                         
                     }
                     
