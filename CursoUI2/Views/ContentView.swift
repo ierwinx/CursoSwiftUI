@@ -3,8 +3,6 @@ import Playgrounds
 
 struct ContentView: View {
     
-    @FocusState private var tecladoActivo: Bool
-    
     var body: some View {
         ZStack {
             Color(.fondo).ignoresSafeArea()
@@ -33,7 +31,7 @@ struct ContentView: View {
                                 .background(.red)
                                 .foregroundStyle(.white)
                                 .padding()
-
+                            
                         }
                         
                         NavigationLink(destination: SheetView()) {
@@ -66,9 +64,6 @@ struct ContentView: View {
                     }
                 }
             }
-        }
-        .onTapGesture {
-            tecladoActivo = false
         }
     }
     
