@@ -25,10 +25,9 @@ struct Listas: View {
                     .resizable()
                     .frame(width: 50, height: 50)
                 Text("Juanito perez")
+                    .padding(.leading, 10)
             }
             .padding(.leading, 20)
-            .padding(.bottom, 20)
-            Divider()
         }
     }
 }

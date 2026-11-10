@@ -14,6 +14,7 @@ struct Tarjeta: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text("Super casa playera")
                     .font(.title)
+                    .foregroundStyle(.textos)
                     .fontWeight(.bold)
                     .padding(.leading, 20)
                 
@@ -36,6 +37,7 @@ struct Tarjeta: View {
                 Text("Esta casa se encuentra en la parte mas exclusiva de playa del carmen con acceso a una playa privada")
                     .font(.default)
                     .fontWeight(.medium)
+                    .foregroundStyle(.textos)
                     .lineLimit(2)
                     .padding(.horizontal, 20)
                 
@@ -53,9 +55,9 @@ struct Tarjeta: View {
             
         }
         .frame(maxWidth: 350, alignment: .leading)
-        .background(.white)
+        .background(.tarjetas)
         .cornerRadius(16)
-        .shadow(color: .black.opacity(0.12), radius: 8, x: 0, y: 4)
+        .shadow(color: Color.sombras.opacity(0.12), radius: 8, x: 0, y: 4)
         
     }
     
