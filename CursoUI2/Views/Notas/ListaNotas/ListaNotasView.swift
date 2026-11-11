@@ -7,17 +7,8 @@ struct ListaNotasView: View {
 
     var body: some View {
         List(infoBD.arrNotas) { nota in
-            NavigationLink {
-                VerNotaView(nota: nota)
-            } label: {
-                VStack(alignment: .leading) {
-                    Text(nota.titulo)
-                        .font(.title3)
-                        .padding(.bottom, 15)
-                    Text(nota.contenido)
-                        .font(.caption)
-                        .lineLimit(3)
-                }
+            NavigationLink(destination: VerNotaView(nota: nota)) {
+                CeldaNota(nota: nota)
             }
             .swipeActions(edge: .trailing) {
                 Button {
