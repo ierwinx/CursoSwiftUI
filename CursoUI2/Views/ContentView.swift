@@ -24,18 +24,8 @@ struct ContentView: View {
                         
                         Slidercitos()
                         
-                        NavigationLink(destination: AlertasView()) {
-                            Text("Vista de Alertas")
-                                .frame(maxWidth: .infinity)
-                                .frame(height: 55)
-                                .background(.red)
-                                .foregroundStyle(.white)
-                                .padding()
-                            
-                        }
-                        
-                        NavigationLink(destination: SheetView()) {
-                            Text("Vista de Sheets")
+                        NavigationLink(destination: Pickercitos()) {
+                            Text("Vista de Pickercitos")
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 55)
                                 .background(.red)
@@ -43,8 +33,8 @@ struct ContentView: View {
                                 .padding()
                         }
                         
-                        NavigationLink(destination: GestosView()) {
-                            Text("Vista de Gestos")
+                        NavigationLink(destination: Slidercitos()) {
+                            Text("Vista de Slidercitos")
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 55)
                                 .background(.red)
@@ -63,6 +53,8 @@ struct ContentView: View {
                         
                     }
                 }
+                .navigationTitle("Curso Platzi")
+                .navigationBarTitleDisplayMode(.large)
             }
         }
     }

@@ -29,6 +29,7 @@ struct ListaNotasView: View {
         .listStyle(.plain)
         .scrollIndicators(.hidden)
         .navigationTitle("Lista de notas")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button {
                 viewModel.abrirCrearNota()
